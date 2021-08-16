@@ -52,7 +52,7 @@ var Home = /*#__PURE__*/function (_React$Component) {
 
     _defineProperty(_assertThisInitialized(_this), "handleClick", function () {
       _this.setState({
-        message: "Hello, you clicked!"
+        message: "Click Handled!"
       });
     });
 
@@ -84,7 +84,7 @@ var _home = _interopRequireDefault(require("./components/home"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var message = "Hello, world!";
+var message = "Hello, Beego + React!";
 ReactDOM.render( /*#__PURE__*/React.createElement(_home["default"], {
   message: message
 }), document.getElementById("app"));

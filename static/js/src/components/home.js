@@ -5,7 +5,7 @@ class Home extends React.Component {
 
   handleClick = () => {
     this.setState({
-      message: "Hello, you clicked!"
+      message: "Click Handled!"
     });
   };
 

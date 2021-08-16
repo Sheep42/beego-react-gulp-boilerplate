@@ -1,5 +1,8 @@
 import Home from "./components/home";
 
-var message = "Hello, world!";
+var message = "Hello, Beego + React!";
 
-ReactDOM.render(<Home message={message} />, document.getElementById("app"));
+ReactDOM.render(
+	<Home message={message} />, 
+	document.getElementById( "app" )
+);
