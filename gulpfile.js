@@ -12,8 +12,8 @@ const transform = () => {
 	return browserify("static/js/src/main.js")
 	.transform(
 		babelify.configure({
-		presets: ["@babel/preset-env", "@babel/react"],
-		plugins: ["@babel/plugin-proposal-class-properties"]
+			presets: ["@babel/preset-env", "@babel/react"],
+			plugins: ["@babel/plugin-proposal-class-properties"]
 		})
 	)
 	.bundle()

@@ -1,8 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import Home from "./components/home";
 
-var message = "Hello, Beego + React!";
+var msg = "Hello, world!";
 
-ReactDOM.render(
-	<Home message={message} />, 
-	document.getElementById( "app" )
-);
+ReactDOM.render(<Home msg={msg} />, document.getElementById("app"));

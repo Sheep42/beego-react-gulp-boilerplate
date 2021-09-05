@@ -1,21 +1,21 @@
-class Home extends React.Component {
-  state = {
-    message: this.props.message
-  };
+import React, { useState } from 'react';
 
-  handleClick = () => {
-    this.setState({
-      message: "Click Handled!"
-    });
-  };
+const Home = ( { msg } ) => {
+  
+	const [message, setMessage] = useState( msg );
 
-  render() {
-    return (
-      <h1 style={{ cursor: "pointer" }} onClick={this.handleClick}>
-        {this.state.message}
-      </h1>
-    );
-  }
+	const handleClick = () => {
+    
+		setMessage( 'Hello, you clicked!' );
+
+	};
+
+	return (
+		<h1 style={{ cursor: 'pointer' }} onClick={ handleClick }>
+			{ message }
+		</h1>
+	);
+
 }
 
 export default Home;
